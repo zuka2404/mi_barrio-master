@@ -8,32 +8,34 @@
 </head>
 <body>
     <header>
-        <ul class="container-botones" >
+        <!-- Lista de botones -->
+        <ul class="container-botones">
             <li class="boton-agregar-busqueda">
-                <a class="conexion" href="index.html" class="">Home</a> <!--agregar problema es el formulario-->
+                <a class="conexion" href="index.html">Home</a>
             </li>
             <li class="boton-agregar-busqueda">
-                <a class="conexion" href="busqueda.html" class="">Busqueda</a>
+                <a class="conexion" href="busqueda.html">Busqueda</a>
             </li>
+            <li class="boton-usuario">Nickname</li>
+        </ul>
 
-            <li class="boton-usuario">
-                Nickname
-            </li>
-        </ul> 
-        
+        <!-- Formulario de publicación -->
         <div class="container-publicacion">
+            <!-- Selector de barrio -->
             <div class="input-container">
                 <select id="problema" name="problema" required class="input-barrio">
                     <option value="" disabled selected>Barrio</option>
                 </select>
             </div>
-                
+            <!-- Input para la calle 1 y calle 2 -->
             <div class="input-container">
                 <input type="text" id="input1" name="input1" placeholder="Calle 1 y calle 2" required class="input-calle">
             </div>
+            <!-- Textarea para el reporte -->
             <div class="input-container">
                 <textarea id="input2" name="input2" placeholder="Escribe aqui tu reporte" required class="input-reporte"></textarea>
             </div>
+            <!-- Botón para publicar -->
             <div class="boton-publicar-container">
                 <button type="button" class="boton-publicar">Publicar</button>
             </div>

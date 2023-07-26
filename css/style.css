@@ -55,7 +55,6 @@ body {
 
 
 /* Tabla de resultados */
-/* Tabla de resultados */
 .tabla-resultados {
   border-collapse: collapse;
   width: 100%;
@@ -66,7 +65,7 @@ body {
 }
 
 .tabla-resultados th,
-.tabla-resultados td {
+.tabla-resultados td { /*td: Selecciona todas las celdas (td) dentro de la segunda fila. */
   padding: 40px; /* Aumentamos el tamaño vertical de cada celda */
   text-align: center;
   font-size: 22px; /* Aumentamos el tamaño del texto */
@@ -81,8 +80,8 @@ body {
 }
 
 /* Estilo para Calles y Problematica */
-.tabla-resultados tr:nth-child(2) td {
-  background-color: white; /* Mismo color para Calles y Problematica */
+.tabla-resultados tr:nth-child(2) td { /*Selecciona el segundo elemento tr (fila) dentro de la tabla. En este caso, la segunda fila contiene los datos "Calles" y "Problemática". */
+  background-color: white; 
   border-top: 1px solid #fff; /* Línea para separar de la fila superior */
 }
 

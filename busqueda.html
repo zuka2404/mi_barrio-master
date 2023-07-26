@@ -9,48 +9,73 @@
 </head>
 
 <body>
+    <!-- Elemento header: sección de encabezado -->
     <header>
+        <!-- Lista desordenada para contener los botones -->
         <ul class="container-botones">
+            <!-- Elemento lista (item de la lista) con un enlace para ir a la página "index.html" -->
             <li class="boton-agregar-busqueda">
                 <a class="conexion" href="index.html">Home</a> <!--agregar problema es el formulario-->
             </li>
+            <!-- Elemento lista (item de la lista) con un enlace para ir a la página "formulario.html" -->
             <li class="boton-agregar-busqueda">
                 <a class="conexion" href="formulario.html">Agregar problema</a>
             </li>
-
+            <!-- Elemento lista (item de la lista) con el texto "Nickname" y una imagen de perfil -->
             <li class="boton-usuario">
                 Nickname
                 <div class="foto-usuario"></div> <!-- Mover la imagen de perfil dentro del texto "Nickname" -->
             </li>
         </ul>
 
+        <!-- Contenedor de la barra de búsqueda -->
         <div class="search-container">
+            <!-- Input para la barra de búsqueda -->
             <input type="text" id="search" name="q" placeholder=" Busqueda por barrio" required>
+            <!-- Icono de búsqueda -->
             <i class="fas fa-search"></i>
         </div>
+
         <!-- TABLA PARA RESULTADOS DE BÚSQUEDA -->
         <table class="tabla-resultados">
+            <!-- Cabecera de la tabla -->
             <thead>
+                <!-- Fila de la cabecera -->
                 <tr>
+                    <!-- Celda de la cabecera -->
                     <th>Calles</th>
+                    <!-- Celda de la cabecera -->
                     <th>Problemática</th>
                 </tr>
             </thead>
+            <!-- Cuerpo de la tabla -->
             <tbody>
+                <!-- Fila de datos -->
                 <tr>
+                    <!-- Celda de datos -->
                     <td>Calles 1 y calle 2</td>
+                    <!-- Celda de datos -->
                     <td>Problemática 1</td>
                 </tr>
+                <!-- Fila de datos -->
                 <tr>
+                    <!-- Celda de datos -->
                     <td>Calles 1 y calle 2</td>
+                    <!-- Celda de datos -->
                     <td>Problemática 2</td>
                 </tr>
+                <!-- Fila de datos -->
                 <tr>
+                    <!-- Celda de datos -->
                     <td>Calles 1 y calle 2</td>
+                    <!-- Celda de datos -->
                     <td>Problemática 3</td>
                 </tr>
+                <!-- Fila de datos -->
                 <tr>
+                    <!-- Celda de datos -->
                     <td>Calles 1 y calle 2</td>
+                    <!-- Celda de datos -->
                     <td>Problemática 4</td>
                 </tr>
             </tbody>
@@ -58,5 +83,6 @@
         <!-- FIN DE LA TABLA -->
     </header>
 </body>
+
 
 </html>
