@@ -3,40 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <title>Proyecto Mi Barrio</title>
+    <style>
+        body {
+            background-color: rgb(255, 208, 0);
+            overflow-y: hidden;
+        }
+
+        /* ******************* este es mi home(index) ****************** */
+
+        .container-botones {
+            display: flex;
+            /* Rectangle 8 */
+            position: absolute;
+            width: 100%;
+            height: 120px;
+            left: -40px;
+            top: -20px;
+            background: linear-gradient(180deg, #0FEFFD 0%, rgba(58, 161, 255, 0.89) 100%);
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        } 
+
+        .boton-agregar-busqueda {
+            width: 25%;
+            margin: auto;
+            list-style: none;
+        }
+
+        .boton-usuario {
+            list-style: none;  
+            width: 8%;
+            margin-top: 2%;
+            font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto al texto "Nickname" */
+        }
+
+        .boton-agregar-busqueda a,
+        .boton-usuario a {
+            font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto a los botones "Agregar problema" y "Busqueda" */
+            text-decoration: none; /* Eliminar subrayado de los enlaces */
+        }
+
+        .boton-agregar-busqueda a,
+        .boton-usuario a {
+            color: #333; /* Cambiar el color del texto a tu preferencia */
+        }
+
+        .container-publicacion {
+            padding-top: 14%;
+            padding-left: 8px;
+        }
+
+        .input-barrio {
+            width: 66.5%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #999;
+            border-radius: 8px;
+            margin-bottom: 120px;
+            margin-top: 15px;
+            margin-left: 5px;  
+            color: #999;
+        }
+
+        .input-calle {
+            width: 65%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #999;
+            border-radius: 8px;
+            margin-bottom: 120px;
+            margin-left: 5px;
+        }
+
+        .input-reporte {
+            width: 65%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #999;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            margin-left: 5px;
+            resize: vertical; /* Permite ajustar la altura vertical del textarea */
+            height: 150px; /* Aumenta la altura del textarea (ajusta este valor según tus necesidades) */
+        }
+
+        .boton-publicar {
+            font-size: 20px;
+            padding: 12px 20px;
+            background-color: #0FEFFD;
+            color: #333;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-left: 5px; /* Agregar un margen izquierdo para separar el botón del input de reporte */
+        }
+
+        .boton-publicar:hover {
+            background-color: #00CED1; /* Color de fondo al pasar el cursor sobre el botón */
+        }
+    </style>
 </head>
 <body>
     <header>
         <ul class="container-botones" >
-          <li class="boton-agregar-busqueda">
-            <a class="conexion" href="index.html" class="">Home</a> <!--agregar problema es el formulario-->
-          </li>
-          <li class="boton-agregar-busqueda">
-            <a class="conexion" href="busqueda.html" class="">Busqueda</a>
-          </li>
-  
-          <li class="boton-usuario">
-            
-            Nickname
-          </li>
-        </ul> 
-        <div><img class="foto-usuario" src="assets/perfilfoto.png" alt="Imagen de perfil"></div>
-<div class="container-publicacion">
-    <div>
-        <form></form>
-    </div>
-    <div class="texto-publicar">
-        <div class="slogan2">
-            <h3>Explica tu problematica !no te olvides de ningún detalle!</h3>
-        </div>
-        <div>
-            <button type="button">Publicar</button>
-        </div>
-    </div>
+            <li class="boton-agregar-busqueda">
+                <a class="conexion" href="index.html" class="">Home</a> <!--agregar problema es el formulario-->
+            </li>
+            <li class="boton-agregar-busqueda">
+                <a class="conexion" href="busqueda.html" class="">Busqueda</a>
+            </li>
 
-</div>
-       
+            <li class="boton-usuario">
+                Nickname
+            </li>
+        </ul> 
+        
+        <div class="container-publicacion">
+            <div class="input-container">
+                <select id="problema" name="problema" required class="input-barrio">
+                    <option value="" disabled selected>Barrio</option>
+                </select>
+            </div>
+                
+            <div class="input-container">
+                <input type="text" id="input1" name="input1" placeholder="Calle 1 y calle 2" required class="input-calle">
+            </div>
+            <div class="input-container">
+                <textarea id="input2" name="input2" placeholder="Escribe aqui tu reporte" required class="input-reporte"></textarea>
+            </div>
+            <div class="boton-publicar-container">
+                <button type="button" class="boton-publicar">Publicar</button>
+            </div>
+        </div>
+    </header>
 </body>
 </html>

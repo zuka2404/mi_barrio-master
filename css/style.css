@@ -1,89 +1,94 @@
 body {
-    background-color: rgb(255, 208, 0);
-    overflow-y: hidden;
+  background-color: rgb(255, 208, 0);
+  overflow-y: hidden;
 }
 
 /* ******************* este es mi home(index) ****************** */
 
 .container-botones {
-display: flex;
-/* Rectangle 8 */
-
-position: absolute;
-width:100%;
-height: 120px;
-left: -40px;
-top: -20px;
-
-background: linear-gradient(180deg, #0FEFFD 0%, rgba(58, 161, 255, 0.89) 100%);
-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  /* Rectangle 8 */
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  left: -40px;
+  top: -20px;
+  background: linear-gradient(180deg, #0FEFFD 0%, rgba(58, 161, 255, 0.89) 100%);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 } 
 
-/* .container-imagen {
- width: 80%;
- height: min-content;
- 
-} */
-
-.foto-usuario {
-  position: static;
-    width:11%;
-    margin-top: -1%;
- padding-left: 80%
-  
-
-     
-}
-
 .imagen {
-  position: relative;
-    width: 65%;
-    /* display: flex;
- align-items: center;
- text-align: center;  */
- padding-left: 20%;
- padding-top: 0%;
- top: -140px;
-    
+  width: 70%;
+  /* display: flex;
+  align-items: center;
+  text-align: center;  */
+  padding-left: 20%;
+  padding-top: 6%;
+  top: -140px;
 }
 
 .boton-agregar-busqueda {
-width: 25%;
-margin: auto;
-list-style: none;
+  width: 25%;
+  margin: auto;
+  list-style: none;
 }
 
 .boton-usuario {
-    width: 8%;
-    margin-top: 2%;
-    list-style: none;
+  list-style: none;  
+  width: 8%;
+  margin-top: 2%;
+  font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto al texto "Nickname" */
 }
 
+.boton-agregar-busqueda a,
+.boton-usuario a {
+  font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto a los botones "Agregar problema" y "Busqueda" */
+  text-decoration: none; /* Eliminar subrayado de los enlaces */
+}
 
-
-/* ******************* aca comienza busqueda ************ */
+.boton-agregar-busqueda a,
+.boton-usuario a {
+  color: #333; /* Cambiar el color del texto a tu preferencia */
+}
 
 .search-container {
-    display: flex;
-    align-items: center;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 5px;
-  }
-  
-  #search {
-    flex: 1;
-    border: none;
-    padding: 5px;
-    font-size: 16px;
-  }
-  
-  .fa-search {
-    color: #999;
-    margin-right: 5px;
-    cursor: pointer;
-  }
+padding-top: 10%;
+}
 
+.container-publicacion {
+  padding-top: 12%;
+  padding-left: 8px;
+}
 
-  
+.input-barrio {
+  width: 66.5%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  margin-bottom: 120px;
+  margin-top: 15px;
+  margin-left: 5px;  
+  color:#999;
+}
+
+.input-calle {
+  width: 65%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  margin-bottom: 120px;
+  margin-left: 5px;
+}
+
+.input-reporte {
+  width: 65%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  resize: vertical; /* Permite ajustar la altura vertical del textarea */
+}
